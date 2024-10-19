@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'Epilogue';
+    src: 
+        url("./assets/Epilogue/Epilogue-VariableFont_wght.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    margin: 0;
+    font-family: "Epilogue", sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 200px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-menu.show {
+    display: flex; /* Show the menu when the .show class is added */
+}
+
+.body-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+    font-size: clamp(1rem, 2vw, 2.5rem);
+    margin: 0 0.5rem;
+}
+
+.header-text {
+    font-size: clamp(2.25rem, 2.5vw, 4.25rem);
+    font-weight: 700;
+}
+
+.body-text {
+    color: hsl(0, 0%, 41%);
+    font-weight: 500;
+    width: clamp(18rem, 50vw, 21.4375rem);
+    max-width: 100%;
+    font-weight: 500; 
+}
+
+.learn-button {
+    width: 8.5rem;
+    height: 3rem;
+    font-size: clamp(1rem, 2vw, 2.5rem);
+    font-weight: 800;
+    border-radius: 0.8rem;
+    border: none;
+    color: #FAFAFA;
+    background-color: #151515;
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem;
+}
+
+.client-logos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.client-logo {
+    width: clamp(4rem, 5vw, 5.078125rem);
+    height: clamp(1.5rem, 1vw, 0.8975rem);
+    margin: 2rem 2rem;
+}
